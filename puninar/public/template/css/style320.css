@@ -1,0 +1,602 @@
+/*================================================	
+    Author     : Wian Khaerul Amri
+    Document   : CSS
+    Company    : PT Go Online Solusi - gositus.com
+==================================================*/
+.container {
+    width: 100%;
+}
+
+#lineTop #wrapLineTop {
+    display: block;
+    width: unset;
+}
+
+#lineTop #wrapLineTop .partLineTop {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#lineTop #wrapLineTop .partLineTop:last-child {
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    padding: 15px 0 0;
+}
+
+header .submenuBottom {
+    position: relative;
+    display: none;
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    padding: 0 0 0 20px;
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+header .submenuBottom .wrapSubmenu {
+    display: block;
+    margin: 0 0 0;
+}
+
+header .submenuBottom .wrapSubmenu .partSubmenu {
+    display: block;
+    width: 100%;
+    margin: 0 0 0;
+    text-align: left;
+}
+
+header .submenuBottom .wrapSubmenu .imgSubmenu {
+    display: none;
+}
+
+header #wrapHeader {
+    display: block;
+}
+
+header #wrapHeader .partHeader {
+    display: block;
+    width: 100%;
+}
+
+header #wrapHeader .partHeader:last-child {
+    width: 100%;
+}
+
+header #wrapHeader .partHeader .wrapSearch {
+    display: none;
+}
+
+header #wrapHeader .partHeader #bottomMenu {
+    display: none;
+    text-align: left;
+    border-top: thin solid #9B9B9B;
+    padding-top: 15px;
+}
+
+header #wrapHeader .partHeader #bottomMenu li {
+    display: block;
+    padding: 0 0 5px;
+    margin: 0 20px;
+}
+
+header #wrapHeader .partHeader #bottomMenu li a {
+    display: inline-block;
+}
+
+header #wrapHeader .logo {
+    display: inline-block;
+    width: 77%;
+}
+
+header #wrapHeader .logo img {
+    display: block;
+    margin: 0 auto 0 15px;
+    width: 150px;
+}
+
+header #wrapHeader #clickMenu {
+    display: inline-block;
+    vertical-align: top;
+    top: -2px;
+}
+
+#banner .ws_images,
+#banner #wowslider-container1 {
+    max-width: unset !important;
+    /*height: 150px;*/
+    height: 250px;
+}
+
+#banner .ws_images .ws_bullets,
+  #banner #wowslider-container1 .ws_bullets {
+    display: block;
+}
+
+#banner .ws_images img.img-banner{
+    /*height: 150px;*/
+    width: auto !important;
+    position: absolute;
+    left: 50%; 
+    -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+    
+}
+
+#banner .sliderhome .ws-title {
+    top: 5%;
+	margin: 10px auto 0;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+#banner .sliderhome .ws-title h1 {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0 0;
+    margin: 0 0 5px;
+}
+
+#banner .sliderhome .ws-title h1:before {
+    width: 100px;
+    height: 2px;
+}
+
+#banner .sliderhome .ws-title p {
+    font-size: 12px;
+}
+
+#banner .sliderhome .ws-title .btnlearnmore {
+    margin: 10px auto 0;
+    padding: 11px 40px;
+    font-size: 11px;
+}
+
+#banner .ws_next,
+#banner .ws_prev {
+    margin-top: -37px !important;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+
+#banner .ws_prev img {
+    width: 214px !important;
+    left: -214px !important;
+}
+
+#banner .ws_next img {
+    width: 214px !important;
+    right: -214px !important;
+	
+}
+
+#center .homeService #wrapHomeService {
+    display: block;
+}
+
+#center .homeService #wrapHomeService .partHomeService {
+    display: inline-block;
+    width: 100%;
+}
+
+#center #wrapNews {
+    display: block;
+}
+
+#center #wrapNews .partNews {
+    display: block;
+    width: 100%;
+}
+
+#center #wrapNews .partNews:last-child {
+    width: 100%;
+    padding-left: 20px;
+}
+
+#center #wrapNews .pagination {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 30px;
+}
+
+#center #wrapNews .pagination a, #center #wrapNews .pagination strong {
+    margin-right: 5px;
+    padding: 7px 13px;
+    vertical-align: middle;
+}
+
+#center #wrapNews .wrapItemNews .partItemNews {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+}
+
+#center #wrapNews .wrapItemNews .partItemNews:first-child {
+    text-align: center;
+}
+
+#center #wrapNews .wrapItemNews .partItemNews:last-child {
+    width: 100%;
+    margin: 10px 0 0;
+}
+
+#center #wrapNews .wrapItemNews .dateNews {
+    display: inline-block;
+}
+
+#center #wrapNews .wrapItemNews .covItemNews .imgItemNews {
+    display: block;
+    width: 100%;
+}
+
+#center #wrapNews .wrapItemNews .covItemNews .imgItemNews img {
+    margin: 0 auto;
+}
+
+#center #wrapNews .wrapItemNews .covItemNews .descItemNews {
+    width: 100%;
+    margin: 10px 0 0;
+    padding-left: 0;
+}
+
+#center #wrapNews .popularNews .itemPopularNews {
+    font-size: 0;
+}
+
+#center #wrapNews .popularNews .itemPopularNews a.pnimg {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+}
+
+#center #wrapNews .popularNews .itemPopularNews .descPopular {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    height: auto;
+    padding-left: 0;
+}
+
+#center #wrapNews .popularNews .itemPopularNews .descPopular h5 {
+    margin: 10px 0 5px;
+}
+
+#center #wrapNews .popularNews .itemPopularNews .panelPopular {
+    margin: 20px 0 0;
+}
+
+#center #contactInfo {
+    padding-top: 20px;
+}
+
+#center #contactInfo p {
+    line-height: 1.5;
+}
+
+#center #contactInfo #wrapContactInfo {
+    display: block;
+}
+
+#center #contactInfo #wrapContactInfo .partContactInfo {
+    display: block;
+    width: 100%;
+}
+
+#center #formContact .contentForm {
+    width: 100%;
+    padding: 0 20px;
+}
+
+#center #formContact .group-inline .form-inline {
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+#center #wrapNetworks {
+    display: block;
+}
+
+#center #wrapNetworks .partNetworks {
+    width: 100%;
+    display: block;
+}
+
+#center #wrapNetworks .partNetworks:last-child {
+    width: 100%;
+}
+
+#center #wrapNetworks #mapNetworks {
+    height: 300px;
+}
+
+#center #wrapNews .wrapItemNews.detailNews .prevNextNews {
+    display: block;
+    font-size: 0;
+}
+
+#center #wrapNews .wrapItemNews.detailNews .prevNextNews .partPrevNextNews {
+    display: inline-block;
+    text-align: center;
+    font-size: 10px;
+}
+
+#center #wrapNews .wrapItemNews.detailNews .prevNextNews p {
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+footer .wrapFooter .partFooter {
+    width: 100%;
+    display: block;
+    margin: 0 0 20px;
+}
+
+footer .wrapFooter .footerMenu li a {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+footer .wrapFooter .infoCompany h6 {
+    font-size: 13px;
+}
+
+footer .wrapFooter .copyright {
+    text-align: center;
+}
+
+.titlePage #wrapTitlePage {
+    display: block;
+}
+
+.titlePage #wrapTitlePage .partTitlePage {
+    display: block;
+    text-align: center;
+}
+
+.titlePage #wrapTitlePage .partTitlePage:last-child {
+    margin: 10px 0 0;
+}
+
+.titlePage #wrapTitlePage .partTitlePage .breadcrumbs {
+    text-align: center;
+}
+
+.headCareer .contentCareer {
+    width: 100%;
+}
+
+.headCareer .contentCareer .slick-prev {
+    top: 100%;
+    left: 0;
+    background-color: #9b9b9b;
+}
+
+.headCareer .contentCareer .slick-next {
+    top: 100%;
+    right: 0;
+    background-color: #9b9b9b;
+}
+
+.wrapAllCareer {
+    margin: 70px 0 0;
+}
+
+.wrapAllCareer .itemAllCareer {
+    width: 90%;
+    padding: 0 20px 0 0;
+}
+
+.wrapDetailCareer {
+    display: block;
+}
+
+.wrapDetailCareer .partDetailCareer {
+    display: block;
+    width: 100%;
+}
+
+.wrapDetailCareer .partDetailCareer:last-child {
+    width: 100%;
+}
+
+.wrapDetailCareer .jobDesc .jobInfo {
+    display: block;
+}
+
+.wrapDetailCareer .jobDesc .jobInfo .partJobInfo {
+    display: block;
+    width: 100%;
+}
+
+.wrapDetailCareer .jobDesc .jobInfo .partJobInfo:last-child {
+    text-align: center;
+    margin: 15px 0 0;
+}
+
+.wrapDetailCareer .jobDesc .jobInterest .sendResume h4 {
+    font-size: 18px;
+    white-space: nowrap;
+    top: -15px;
+}
+
+.wrapColumn {
+    display: block;
+}
+
+.wrapColumn .partColumn {
+    display: block;
+    width: 100%;
+}
+
+.ourIndustrySolution h3 {
+    padding: 0 20px;
+}
+
+.ourIndustrySolution ul {
+    width: 100%;
+}
+
+.ourIndustrySolution ul li:after {
+    margin: 0 5px;
+}
+
+.menuServices .wrapMenuServices ul li {
+    margin: 5px 0;
+    display: block;
+}
+
+.menuServices .wrapMenuServices ul li:last-child {
+    margin-bottom: 0;
+}
+
+.wrapContentService {
+    display: block;
+}
+
+.wrapContentService .partContentService {
+    display: block;
+    width: 100%;
+}
+
+.wrapContentService .partContentService:last-child {
+    margin: 20px 0 0;
+}
+
+.slideService .itemSlideService img {
+    height: 100%;
+    width: 100%;
+}
+
+.ourSite.bgGeo p {
+    text-align: left;
+}
+
+.bgVisiMisi .line9b.width-400 {
+    width: 200px;
+}
+
+.wrapMenuAbout {
+    display: block;
+}
+
+.wrapMenuAbout .itemMenuAbout {
+    width: 100%;
+    display: block;
+    margin: 0 0 20px;
+}
+
+.bgOurValues .contentOurValues {
+    padding: 0 20px;
+}
+
+.bgOurValues .contentOurValues img {
+    width: 100%;
+}
+
+.bgOurValues .listIcare .partIcare {
+    width: 100%;
+    display: block;
+    margin: 0 0 30px;
+}
+
+.listPartnership .itemPartnership {
+    display: block;
+}
+
+.listPartnership .itemPartnership .partPartnership {
+    display: block;
+    width: 100%;
+    margin: 0 0 25px;
+}
+
+.listPartnership .itemPartnership .partPartnership.isEven {
+    display: block;
+}
+
+.listPartnership .itemPartnership .partPartnership.isEvenTop {
+    display: none;
+}
+
+.listPartnership .itemPartnership .partPartnership img {
+    width: 100%;
+}
+
+.listYear {
+    width: 100%;
+}
+
+.listYear:before, .listYear:after {
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+.listYear ul li:after {
+    width: 500px;
+}
+
+.slideHistory .itemSlideHistory {
+    padding: 80px 0;
+}
+
+.slideHistory .itemSlideHistory h3 {
+    font-size: 19px;
+    padding: 0 40px;
+}
+
+.slideHistory .slick-prev {
+    left: 0;
+}
+
+.slideHistory .slick-next {
+    right: 0;
+}
+
+.industrySolution .wrapListIndustry .partIndustry {
+    display: block;
+    width: 100%;
+}
+
+.headIndustry .contentHeadIndustry {
+    display: block;
+    width: 100%;
+}
+
+.headIndustry .contentHeadIndustry .partHeadIndustry {
+    display: block;
+    width: 100%;
+}
+
+.headIndustry h4 {
+    padding: 20px 0;
+}
+
+.contentIndustry .wrapContentIndustry .partContentIndustry {
+    display: block;
+    width: 100%;
+}
+
+.contentIndustry .wrapContentIndustry .partContentIndustry img {
+    width: 100%;
+}
+
+.g-recaptcha {
+    -webkit-transform: scale(0.8) translateX(-5%);
+    -moz-transform: scale(0.8) translateX(-5%);
+    -ms-transform: scale(0.8) translateX(-5%);
+    -o-transform: scale(0.8) translateX(-5%);
+    transform: scale(0.8) translateX(-5%);
+}
+
+.wrapper-copyright{padding: 10px 0px 0;}
