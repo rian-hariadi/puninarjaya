@@ -91,7 +91,7 @@ s0.parentNode.insertBefore(s1,s0);
             
             <div id="wrapHeader">
                 <div class="partHeader">
-                    <a href="../template/index.html" class="logo">
+                    <a href="/" class="logo">
                         <img src="{{ asset('template/images/public/logo.png') }}" alt="Puninar Logistics - Trusted Solution Partner" />
                     </a>
                     <a href="../template/javascript:;" id="clickMenu" class="">

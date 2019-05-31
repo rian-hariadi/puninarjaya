@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 
 
-Route::post('number1','PowerUnitController@index') ;
+Route::get('/number1','PowerUnitController@index') ;
 
 
 Route::get('/number2','Number2Controller@index') ;
@@ -29,16 +29,14 @@ Route::get('/number2','Number2Controller@index') ;
 Route::get('/number4','Number4Controller@index') ;
 
 
-Route::get('/number5',function() {
-	return view('number5') ;
-}) ;
+Route::get('/number7', function () {
+    return view('onlinetest');
+});
 
 
-
-Route::get('/number6',function() {
-	return view('number6') ;
-}) ;
-
+Route::get('/number6', function () {
+    return view('onlinetest');
+});
 
 
 Route::get('/number7','Number7Controller@index') ;
