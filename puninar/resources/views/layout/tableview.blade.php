@@ -214,6 +214,101 @@ s0.parentNode.insertBefore(s1,s0);
 </header>
 
 
+
+
+<style type="text/css">
+  label{
+    margin-top: 20px;
+  }
+
+</style>
+
+
+<div class="container" >
+<h1>Online Test by Rian Hariadi</h1>
+
+
+
+    <div class="row"    style="min-height: 300px;">
+        
+    <h3>{{ $soal }}</h3>
+    <hr>
+
+
+    <a href="/{{ $target_table }}/truncate" onclick="return confirm('Are you sure want to DELETE ALL DATA?')">Truncate (Clear Table)</a>
+    <table class="table table-striped" style="overflow-x: scroll; white-space: nowrap;">
+    <thead style="background-color: lightgreen">
+      <tr>
+        <?php
+          foreach ($th as $th) {
+            echo '<th>'.$th.'</th>' ;
+            $header[] = $th ;
+          }
+          echo '<th style="width:400px;">ACTION</th>' ;
+
+        ?>
+      </tr>
+    </thead>
+    <?php 
+        if ($total_row != 0){
+
+          ?>
+
+    <tbody>
+      <?php
+        foreach ($item_list as $row) {
+          echo '<tr>';
+
+          foreach ($header as $td) {
+            echo '<td>'.$row->$td .'</td>' ;
+          }
+          echo '<td>' ; ?>
+          <ul class="list-inline">
+          <li class="list-inline-item" style="padding:0px; margin: 0px;"> <a href="/{{ $target_table }}/delete/{{ $row->$firstKey }}" class="btn btn-danger" onclick="return confirm('Are you sure want to delete?')" >Delete</a></li>
+          <li class="list-inline-item" style="padding:0px;  margin: 0px;">    <form method="get" action="/{{ $target_table }}">
+        
+              <input type="hidden" name="id" value="{{$row->$firstKey}}">
+              <button type="submit" name="" class="btn btn-info" >Edit</button>
+            </form></li>
+          </ul>
+          
+           
+
+
+          <?php 
+          echo '</td>' ;
+            
+
+      echo '</tr>';
+        }
+        ?>
+
+    </tbody>
+    <?php
+        }
+        ?>
+  </table>
+
+        </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @yield('content') ;
 
 

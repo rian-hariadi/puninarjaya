@@ -71,8 +71,8 @@ class CreatePowerunitTable extends Migration
                  $table->string('LOCATION_NAME', 64);
                  $table->string('CITY', 32);
                   $table->string('PROVINCE', 32);
-                 $table->decimal('LATITUDE',10,8);
-                  $table->decimal('LONGITUDE',10,8);
+                 $table->decimal('LATITUDE',12,8);
+                  $table->decimal('LONGITUDE',12,8);
                  $table->smallInteger('INSERT_USER');
                  $table->date('INSERT_DATE');
                  $table->smallInteger('UPDATE_USER');
@@ -95,7 +95,7 @@ class CreatePowerunitTable extends Migration
 
 
                  $table->bigIncrements('ID_POWER_UNIT_TYPE');
-                 $table->string('ID_POWER_UNIT_TYPE_XID', 32);
+                 $table->string('POWER_UNIT_TYPE_XID', 32);
                  $table->string('DESCRIPTION', 64);
                  $table->smallInteger('INSERT_USER');
                  $table->date('INSERT_DATE');

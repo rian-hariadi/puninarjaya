@@ -1,3 +1,26 @@
+<?php
+
+if ($total_row != 0)
+{
+  if ($item != '')
+  {
+    $array = json_decode(json_encode($item), true);
+    $firstKey = array_key_first($array);
+   
+  }
+  else{
+      $array = json_decode(json_encode($item_list[0]), true);
+    $firstKey = array_key_first($array);
+  }
+
+}
+
+
+?>
+
+
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -214,10 +237,70 @@ s0.parentNode.insertBefore(s1,s0);
 </header>
 
 
-@yield('content') ;
+
+
+<style type="text/css">
+  label{
+    margin-top: 20px;
+  }
+
+</style>
+
+
+<div class="container" >
+<h1>Online Test by Rian Hariadi</h1>
 
 
 
+    <div class="row"    style="min-height:600px;">
+        
+    <h3>{{ $soal }}</h3>
+    <hr>
+
+
+    <a href="/{{ $target_table }}/truncate" onclick="return confirm('Are you sure want to DELETE ALL DATA?')">Truncate (Clear Table)</a>
+    <table class="table table-striped" style="overflow-x: scroll; white-space: nowrap;">
+    <thead style="background-color: lightgreen">
+      <tr>
+       <th>POWER_UNIT_NUM</th>
+       <th>DESCRIPTION</th>
+       <th>ID_CORPORATION</th>
+       <th>ID_LOCATION</th>
+       <th>ID_POWER_UNIT_TYPE</th>
+
+      
+      </tr>
+    </thead>
+    <?php 
+        if ($total_row != 0){
+
+          ?>
+
+    <tbody>
+      <?php
+        foreach ($item_list as $row) {
+          echo '<tr>';
+        ?>
+        <td>{{ $row->POWER_UNIT_NUM }} </td>
+       <td>{{ $row->DESCRIPTION }} </td>
+       <td>{{ $row->CORPORATION_NAME }} </td>
+       <td>{{ $row->LOCATION_NAME }} </td>
+       <td>{{ $row->POWER_UNIT_TYPE_XID }} </td>
+            
+  <?php
+      echo '</tr>';
+        }
+        ?>
+
+    </tbody>
+    <?php
+        }
+        ?>
+  </table>
+
+        </div>
+
+</div>
 
 
 

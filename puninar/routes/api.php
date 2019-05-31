@@ -16,3 +16,12 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+ 
+ // PowerUnits Table  (Number 3)
+Route::get('apipowerunit','ApiPowerUnitController@index'  ) ;
+Route::post('apipowerunit','ApiPowerUnitController@store'  ) ;
+Route::get('apipowerunit/delete/{id}','ApiPowerUnitController@delete'  ) ;
+Route::get('apipowerunit/truncate','ApiPowerUnitController@truncate'  ) ;
+Route::post('apipowerunit/edit/{id}','ApiPowerUnitController@edit'  ) ;
+
